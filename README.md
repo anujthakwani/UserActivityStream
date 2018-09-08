@@ -11,17 +11,17 @@ mvn clean install
 # How To Run
 
 
-Running Producer:
+#### Running Producer:
 ```
 java -cp UserActivityStream-1.0-SNAPSHOT-jar-with-dependencies.jar com.demo.UserProducer ./resource/sampleData
 ```
-Running Consumer:
+#### Running Consumer:
 ```
 java -cp UserActivityStream-1.0-SNAPSHOT-jar-with-dependencies.jar com.demo.Consumer <topic-to-read> <consmer-group>
 
 ```
 
-Running Streams:
+#### Running Streams:
 ```
 java -cp UserActivityStream-1.0-SNAPSHOT-jar-with-dependencies.jar com.demo.streams.UserActivityStreamsDriver
 ```
