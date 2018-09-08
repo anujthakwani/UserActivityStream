@@ -87,6 +87,7 @@ public class UserActivityStreamsDriver {
         config.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, KafkaConstants.STREAMOFFSET);
         // disable caching to see session merging
         config.put(StreamsConfig.CACHE_MAX_BYTES_BUFFERING_CONFIG, 0);
+        //register custom time extractor.
         config.put(StreamsConfig.DEFAULT_TIMESTAMP_EXTRACTOR_CLASS_CONFIG, EventTimeExtractor.class);
 
 

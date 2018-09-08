@@ -1,8 +1,6 @@
 package com.demo.streams;
 
 import com.demo.models.UserActivity;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.streams.processor.TimestampExtractor;
 import org.apache.log4j.Logger;
@@ -13,10 +11,9 @@ import java.text.SimpleDateFormat;
 // Extracts the  timestamp from the field of a record .
 public class EventTimeExtractor implements TimestampExtractor {
 
-    ObjectMapper mapper = new ObjectMapper();
     SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     Logger logger = Logger.getLogger(EventTimeExtractor.class);
-    Gson gson = new Gson();
+
 
 
     @Override
