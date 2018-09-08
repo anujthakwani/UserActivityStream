@@ -28,11 +28,7 @@
 
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka -->
 
-
-        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
-        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
@@ -43,11 +39,6 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.6</version>
         </dependency>
-
-
-
-
-
 
             <dependency>
                 <groupId>io.confluent</groupId>
