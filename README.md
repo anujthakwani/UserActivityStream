@@ -1,6 +1,6 @@
 # UserActivityStream
 
-This is Kafka Streams App that sessionizes incoming user activity data
+This is Kafka Streams App that sessionizes incoming user activity data. Here basic assumption is that all the events for a given user will go to same partition, so as to maintain it ordering. That is why we have used userId as key will producing messages in topic from UserProducer class.  
 
 ## Compile
 ```
