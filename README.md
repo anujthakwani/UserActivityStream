@@ -27,7 +27,7 @@ java -cp UserActivityStream-1.0-SNAPSHOT-jar-with-dependencies.jar com.demo.stre
 ```
 
 
-#Notes:
+# Notes:
 
 ```
 -->Input Topic is user.
