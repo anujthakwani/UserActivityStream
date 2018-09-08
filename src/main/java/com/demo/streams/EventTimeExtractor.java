@@ -30,10 +30,7 @@ public class EventTimeExtractor implements TimestampExtractor {
                 logger.info(String.format("returning timestamp from custom timeExtractor %s",sf.parse(jsonNode.getTs()).getTime()));
                 return sf.parse(jsonNode.getTs()).getTime();
             } else {
-                // Kafka allows `null` as message value.  How to handle such message values
-                // depends on your use case.  In this example, we decide to fallback to
-                // wall-clock time (= processing-time)
-                // .
+
 
                 logger.info("Payload is null, returning default timestamp");
                 return System.currentTimeMillis();
