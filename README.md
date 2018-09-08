@@ -33,5 +33,5 @@ java -cp UserActivityStream-1.0-SNAPSHOT-jar-with-dependencies.jar com.demo.stre
 -->Input Topic is user.
 -->Please execute cmd '/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic user' to create topic
 -->Output Topic of streams is userSessions. This will contain sessionized events info.
--->sampel data is available in resources folder
+-->sample input data is available in resources folder
 ```
